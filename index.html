@@ -33,15 +33,37 @@
         <h2 class="text-2xl font-bold text-white mb-8 border-b border-gray-800 pb-2">📂 Réalisations</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Projet 1 : Réseau -->
-            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-blue-500 transition">
-                <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Réseau IP</span>
-                <h3 class="text-xl font-bold text-white mt-2 mb-3">Refonte de Topologie & Routage Inter-VLAN</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    Conception d'une architecture réseau sécurisée avec segmentation par VLANs et routage dynamique.
-                </p>
-                <div class="text-xs text-gray-500 font-mono">Technologies : Cisco, OSPF, Wireshark</div>
-            </div>
+<!-- Projet 1 : Architecture Réseau & Sécurité RDBMS -->
+<div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-blue-500 transition">
+    <div class="flex justify-between items-start">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Réseau & Sécurité</span>
+        <span class="text-xs font-mono text-gray-500">🔒 En Production</span>
+    </div>
+    
+    <h3 class="text-xl font-bold text-white mt-2 mb-3">Accès distant sécurisé pour bases de données Sage 100 SQL</h3>
+    
+    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+        <strong>Défi :</strong> Permettre à des clients distants d'interroger en temps réel les tables SQL Server d'un ERP Sage Ligne 100, sans jamais exposer le port 1433 publiquement sur Internet.
+    </p>
+
+    <div class="text-gray-400 text-sm mb-4">
+        <strong class="text-gray-200">Solution mise en œuvre :</strong>
+        <ul class="list-disc list-inside space-y-1 mt-1 pl-2 text-gray-300">
+            <li>Création d'un <span class="text-blue-300">service (daemon Linux/Windows)</span> pour automatiser un tunnel SSH inverse (Remote Tunneling).</li>
+            <li>Déploiement d'un <span class="text-blue-300">VPS bastion</span> faisant office de passerelle pivot sécurisée.</li>
+            <li>Configuration du <span class="text-blue-300">Firewall</span> du VPS et redirection de flux pour isoler et cloisonner le trafic.</li>
+            <li>Mise en place d'un tunnel SSH Forward côté client pour interroger la base locale comme si elle était sur le LAN.</li>
+        </ul>
+    </div>
+
+    <div class="border-t border-gray-700 pt-3 mt-4 flex flex-wrap gap-2">
+        <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">SSH Tunneling</span>
+        <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">SQL Server (1433)</span>
+        <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">Firewall/iptables</span>
+        <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">VPS Bastion</span>
+    </div>
+</div>
+
 
             <!-- Projet 2 : RDBMS -->
             <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-blue-500 transition">
