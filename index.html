@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Expert Réseaux & Bases de Données</title>
+    <!-- Chargement de Tailwind CSS pour un design moderne -->
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <!-- EN-TÊTE / HERO SECTION -->
+    <header class="max-w-5xl mx-auto px-6 py-20 text-center md:text-left md:flex md:items-center md:justify-between">
+        <div class="md:w-2/3">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+                Bonjour, je suis <span class="text-blue-400">[Votre Prénom]</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-6">
+                Spécialiste en **Réseaux IP** et Architectures **RDBMS** (MariaDB, SQL Server). Je conçois des infrastructures résilientes et j'optimise vos bases de données.
+            </p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg transition">
+                Me contacter
+            </a>
+        </div>
+        <!-- Un visuel ou logo abstrait tech à droite -->
+        <div class="mt-10 md:mt-0 text-6xl text-blue-500 opacity-75">
+            🌐 💾
+        </div>
+    </header>
+
+    <!-- SECTION PROJETS -->
+    <section class="max-w-5xl mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold text-white mb-8 border-b border-gray-800 pb-2">📂 Réalisations</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Projet 1 : Réseau -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-blue-500 transition">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Réseau IP</span>
+                <h3 class="text-xl font-bold text-white mt-2 mb-3">Refonte de Topologie & Routage Inter-VLAN</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Conception d'une architecture réseau sécurisée avec segmentation par VLANs et routage dynamique.
+                </p>
+                <div class="text-xs text-gray-500 font-mono">Technologies : Cisco, OSPF, Wireshark</div>
+            </div>
+
+            <!-- Projet 2 : RDBMS -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-blue-500 transition">
+                <span class="text-xs font-bold uppercase tracking-wider text-green-400">Base de données</span>
+                <h3 class="text-xl font-bold text-white mt-2 mb-3">Optimisation d'un Cluster MariaDB</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Audit de performance, indexation de tables critiques et réduction des temps de réponse de 60%.
+                </p>
+                <div class="text-xs text-gray-500 font-mono">Technologies : MariaDB, SQL Server, Indexing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-2xl font-bold text-white mb-4">Contact</h2>
+        <p class="text-gray-400 mb-6">Un projet, une question ou une opportunité ? Discutons-en.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="https://linkedin.com" class="text-blue-400 hover:underline">LinkedIn</a>
+            <a href="mailto:votre.email@exemple.com" class="text-blue-400 hover:underline">Email</a>
+        </div>
+    </section>
+
+</body>
+</html>
