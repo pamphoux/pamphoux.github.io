@@ -144,25 +144,24 @@
 
         </div>
     </section>
-
-    <!-- SECTION RÉALISATIONS -->
+    <!-- SECTION RÉALISATIONS OPTIMISÉE -->
     <section class="max-w-5xl mx-auto px-6 py-12">
-        <div class="flex items-center space-x-4 mb-8 border-b border-gray-800 pb-4">
-            <h2 class="text-2xl font-bold text-white">📂 Études de cas & Réalisations</h2>
-            <span class="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded font-mono">2 Projets actifs</span>
+        <div class="flex items-center space-x-4 mb-10 border-b border-gray-800 pb-4">
+            <h2 class="text-2xl font-bold text-white tracking-wide">📂 Études de cas & Réalisations</h2>
+            <span class="text-xs bg-blue-500/10 text-blue-400 px-2.5 py-1 rounded-full font-mono border border-blue-500/20">4 Systèmes Actifs</span>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             <!-- Projet 1 : Architecture Réseau & Sécurité RDBMS -->
-            <div class="bg-gray-800/60 backdrop-blur rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-blue-500 transition-all duration-300 flex flex-col justify-between">
+            <div class="bg-gray-800/40 backdrop-blur-md rounded-xl border border-gray-700/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10 flex flex-col justify-between group">
                 <div>
                     <div class="flex justify-between items-start">
-                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Réseau & Sécurité</span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400 group-hover:text-blue-300 transition-colors">Réseau & Sécurité</span>
                         <span class="text-xs font-mono text-gray-500">🔒 En Production</span>
                     </div>
                     
-                    <h3 class="text-xl font-bold text-white mt-2 mb-3">Accès distant sécurisé pour bases de données Sage 100 SQL</h3>
+                    <h3 class="text-xl font-bold text-white mt-2 mb-3 group-hover:text-blue-400 transition-colors">Accès distant sécurisé pour bases de données Sage 100 SQL</h3>
                     
                     <p class="text-gray-400 text-sm mb-4 leading-relaxed">
                         <strong>Défi :</strong> Permettre à des clients distants d'interroger en temps réel les tables SQL Server d'un ERP Sage Ligne 100, sans jamais exposer le port 1433 publiquement sur Internet.
@@ -181,22 +180,22 @@
                 </div>
 
                 <div class="border-t border-gray-700/60 pt-3 mt-4 flex flex-wrap gap-1.5">
-                    <span class="bg-gray-900 text-gray-400 text-[11px] px-2 py-0.5 rounded font-mono">SSH Ed25519</span>
-                    <span class="bg-gray-900 text-gray-400 text-[11px] px-2 py-0.5 rounded font-mono">ssh-agent</span>
-                    <span class="bg-gray-900 text-gray-400 text-[11px] px-2 py-0.5 rounded font-mono">SQL Server</span>
-                    <span class="bg-gray-900 text-gray-400 text-[11px] px-2 py-0.5 rounded font-mono">iptables</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">SSH Ed25519</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">ssh-agent</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">SQL Server</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">iptables</span>
                 </div>
             </div>
 
-            <!-- Projet 2 : Gestion de Crise & Data Engineering (RDBMS) -->
-            <div class="bg-gray-800/60 backdrop-blur rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-green-500 transition-all duration-300 flex flex-col justify-between">
+            <!-- Projet 2 : Gestion de Crise & Data Engineering -->
+            <div class="bg-gray-800/40 backdrop-blur-md rounded-xl border border-gray-700/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/10 flex flex-col justify-between group">
                 <div>
                     <div class="flex justify-between items-start">
-                        <span class="text-xs font-bold uppercase tracking-wider text-green-400">RDBMS & Maintenance</span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-400 group-hover:text-green-300 transition-colors">RDBMS & Maintenance</span>
                         <span class="text-xs font-mono text-gray-500">🛠️ Expertise</span>
                     </div>
                     
-                    <h3 class="text-xl font-bold text-white mt-2 mb-3">Datafix de masse & Restauration d'intégrité de données</h3>
+                    <h3 class="text-xl font-bold text-white mt-2 mb-3 group-hover:text-green-400 transition-colors">Datafix de masse & Restauration d'intégrité de données</h3>
                     
                     <p class="text-gray-400 text-sm mb-4 leading-relaxed">
                         <strong>Défi :</strong> Intervenir en urgence ou lors de maintenances sur des bases de données de production corrompues (bugs applicatifs, ruptures d'intégrité) sans provoquer d'interruption prolongée.
@@ -212,18 +211,27 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="border-t border-gray-700/60 pt-3 mt-4 flex flex-wrap gap-1.5">
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">MariaDB</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">SQL Server</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">Data Cleaning</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">Rollback Strategy</span>
+                </div>
+            </div>
+
             <!-- Projet 3 : Intégration Applicative & Pipelines API -->
-            <div class="bg-gray-800/60 backdrop-blur rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-pink-500 transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+            <div class="bg-gray-800/40 backdrop-blur-md rounded-xl border border-gray-700/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-pink-500 hover:shadow-lg hover:shadow-pink-500/10 flex flex-col justify-between group">
                 <div>
                     <div class="flex justify-between items-start">
-                        <span class="text-xs font-bold uppercase tracking-wider text-pink-400">APIs & E-Commerce Integration</span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-pink-400 group-hover:text-pink-300 transition-colors">APIs & E-Commerce Integration</span>
                         <span class="text-xs font-mono text-gray-500">⚙️ Automatisation</span>
                     </div>
                     
-                    <h3 class="text-xl font-bold text-white mt-2 mb-3">Passerelles d'interconnexion & Synchronisation de flux ERP / E-Commerce</h3>
+                    <h3 class="text-xl font-bold text-white mt-2 mb-3 group-hover:text-pink-400 transition-colors">Passerelles d'interconnexion & Synchronisation ERP / E-Commerce</h3>
                     
                     <p class="text-gray-400 text-sm mb-4 leading-relaxed">
-                        <strong>Défi :</strong> Automatiser les échanges de données financiers et logistiques entre des plateformes de vente (OpenCart, osCommerce) et les outils de gestion/comptabilité moderne (Pennylane, écosystème Sage), sans double saisie humaine.
+                        <strong>Défi :</strong> Automatiser les échanges de données financiers et logistiques entre des plateformes de vente (OpenCart, osCommerce) et les outils de gestion moderne (Pennylane, Sage), sans double saisie humaine.
                     </p>
 
                     <div class="text-gray-400 text-sm mb-4">
@@ -231,14 +239,24 @@
                         <ul class="list-disc list-inside space-y-1 mt-1 pl-1 text-gray-300">
                             <li>Développement de scripts d'<span class="text-pink-300">automatisation en Python</span> pour l'extraction et le traitement des données brutes.</li>
                             <li>Modélisation, prototypage et validation des requêtes de flux via <span class="text-pink-300">Postman</span>.</li>
-                            <li>Déploiement de pipelines d'import/export de données exploitant les pilotes <span class="text-pink-300">ODBC</span> pour lier le web aux bases de données locales.</li>
-                            <li>Planification et monitoring des tâches de synchronisation asynchrones via des tâches <span class="text-pink-300">Crontab Linux</span> hautement disponibles.</li>
+                            <li>Déploiement de pipelines d'import/export exploitant les pilotes <span class="text-pink-300">ODBC</span> pour lier le web aux bases locales.</li>
+                            <li>Planification et monitoring des tâches de synchronisation asynchrones via des tâches <span class="text-pink-300">Crontab Linux</span>.</li>
                         </ul>
                     </div>
                 </div>
+
+                <div class="border-t border-gray-700/60 pt-3 mt-4 flex flex-wrap gap-1.5">
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">Python Automation</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">REST APIs / Postman</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">OpenCart</span>
+                    <span class="bg-gray-900/80 text-gray-400 text-[11px] px-2.5 py-0.5 rounded font-mono border border-gray-800">Pennylane</span>
+                </div>
+            </div>
+
             <!-- Projet 4 : Virtualisation Haute Performance & DevOps -->
-            <div class="bg-gray-800/60 backdrop-blur rounded-xl overflow-hidden border border-gray-700 p-6 hover:border-purple-500 transition-all duration-300 flex flex-col justify-between">
+            <div class="bg-gray-800/40 backdrop-blur-md rounded-xl border border-gray-700/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/10 flex flex-col justify-between group">
                 <div>
+
                     <div class="flex justify-between items-start">
                         <span class="text-xs font-bold uppercase tracking-wider text-purple-400">Hypervisors & Infrastructure</span>
                         <span class="text-xs font-mono text-gray-500">⚡ Optimisation</span>
