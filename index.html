@@ -33,46 +33,90 @@
             🌐 💾
         </div>
     </header>
-    <!-- SECTION COMPÉTENCES / STACK -->
+        <!-- SECTION COMPÉTENCES / STACK COMPLETE -->
     <section class="max-w-5xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold text-white mb-8 border-b border-gray-800 pb-4">🛠️ Bagage Technique</h2>
+        <h2 class="text-2xl font-bold text-white mb-8 border-b border-gray-800 pb-4">🛠️ Bagage Technique & Stack</h2>
         
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <!-- Catégorie 1: Réseau & Sécu -->
-            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800">
-                <h3 class="text-sm font-bold uppercase tracking-wider text-blue-400 mb-3">Réseaux & Sécurité</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Architecture IP</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">SSH Tunneling</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Wireshark</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">iptables / FW</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">VPN / VLANs</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- 1. Réseaux & Sécurité -->
+            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-blue-400 mb-3">Réseaux & Sécurité</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Architecture IP</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">OpenVPN</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">WireGuard</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">SSH Tunneling</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Routeurs GL.iNet</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Wireshark (Intermédiaire)</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">iptables / Firewalls</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Catégorie 2: Data & RDBMS -->
-            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800">
-                <h3 class="text-sm font-bold uppercase tracking-wider text-green-400 mb-3">Bases de Données (RDBMS)</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">SQL Server</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">MariaDB</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Optimisation SQL</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Datafix / Patches</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Backup Validation</span>
+            <!-- 2. RDBMS & Gestion de Données -->
+            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-green-400 mb-3">Bases de Données & APIs</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">SQL Server (SSMS)</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">MariaDB</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Optimisation SQL</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Datafix de masse</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">APIs (Import / Export)</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Postman</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">ODBC Connections</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Catégorie 3: Systèmes & Outils -->
-            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800">
-                <h3 class="text-sm font-bold uppercase tracking-wider text-purple-400 mb-3">Systèmes & Environnement</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Linux (Daemons)</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Windows Server</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Git / GitHub</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">Sage 100 Ecosystem</span>
-                    <span class="bg-gray-900 text-gray-300 text-xs px-2.5 py-1 rounded border border-gray-700 font-mono">VPS Bash</span>
+            <!-- 3. Virtualisation & Supervision -->
+            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-purple-400 mb-3">Hyperviseurs & Cloud</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">KVM / QEMU / libvirt</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Proxmox VE</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">VMware</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Docker</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Hyper-V</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Zabbix Monitoring</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">VPS Cloud (OVH, Ionos)</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- 4. Administration Systèmes & Scripts -->
+            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-3">Administration OS & Scripts</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Linux (Services, Crontab)</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Windows Server (AD, DNS)</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Automation Python</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Bash Scripting</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">PowerShell</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Wine Environment</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Écosystème Web & Gestion -->
+            <div class="bg-gray-800/40 p-5 rounded-xl border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-pink-400 mb-3">Web, ERP & Gestion</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Apache / IIS</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">WordPress</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">OpenCart / osCommerce</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Pennylane Integration</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Scrum / Méthodes Agiles</span>
+                        <span class="bg-gray-900 text-gray-300 text-xs px-2 py-0.5 rounded border border-gray-700/60 font-mono">Jira / VS Code</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
