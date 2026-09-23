@@ -49,20 +49,23 @@
     <div class="text-gray-400 text-sm mb-4">
         <strong class="text-gray-200">Solution mise en œuvre :</strong>
         <ul class="list-disc list-inside space-y-1 mt-1 pl-2 text-gray-300">
-            <li>Création d'un <span class="text-blue-300">service (daemon Linux/Windows)</span> pour automatiser un tunnel SSH inverse (Remote Tunneling).</li>
-            <li>Déploiement d'un <span class="text-blue-300">VPS bastion</span> faisant office de passerelle pivot sécurisée.</li>
-            <li>Configuration du <span class="text-blue-300">Firewall</span> du VPS et redirection de flux pour isoler et cloisonner le trafic.</li>
-            <li>Mise en place d'un tunnel SSH Forward côté client pour interroger la base locale comme si elle était sur le LAN.</li>
+            <li>Création d'un <span class="text-blue-300">service (daemon)</span> pour automatiser un tunnel SSH inverse (Remote Tunneling).</li>
+            <li>Déploiement d'un <span class="text-blue-300">VPS bastion</span> faisant office de passerelle pivot sécurisée avec filtrage Pare-feu (iptables).</li>
+            <li>Durcissement de la sécurité (Hardening) via une authentification exclusive par <span class="text-blue-300">clés Ed25519</span> avec passphrase.</li>
+            <li>Intégration et configuration de <span class="text-blue-300">ssh-agent</span> pour la gestion sécurisée et persistante des clés en mémoire.</li>
+            <li>Mise en place d'un tunnel SSH Forward côté client pour interroger la base distante de manière totalement transparente.</li>
         </ul>
     </div>
 
     <div class="border-t border-gray-700 pt-3 mt-4 flex flex-wrap gap-2">
-        <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">SSH Tunneling</span>
+        <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">SSH Ed25519</span>
+        <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">ssh-agent</span>
         <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">SQL Server (1433)</span>
         <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">Firewall/iptables</span>
         <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 rounded font-mono">VPS Bastion</span>
     </div>
 </div>
+
 
 
             <!-- Projet 2 : RDBMS -->
